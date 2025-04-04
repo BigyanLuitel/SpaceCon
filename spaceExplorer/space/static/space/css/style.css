@@ -1,0 +1,88 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+    z-index: 1000;
+}
+
+/* Hero Section */
+#hero {
+    min-height: 100vh; /* Full viewport height */
+    background-image: url('/static/space/images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    padding: 100px 20px; /* Prevent content from being covered by navbar */
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.explore-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.explore-btn:hover {
+    background: rgba(30, 7, 239, 0.5);
+}
+
+/* Card Section */
+#contents {
+    min-height: 100vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.card {
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+
+
+
+/* Footer */
+#footer {
+    height: 40vh;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    padding: 20px;
+}
