@@ -1,0 +1,9 @@
+.header {
+    background: linear-gradient(to right, #1e3c72, #2a5298);  /* Space-inspired gradient */
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    border-radius: 8px 8px 0 0;  
+    margin-bottom: 20px;
+}
+

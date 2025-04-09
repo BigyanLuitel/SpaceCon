@@ -1,0 +1,76 @@
+/* Space Background */
+body {
+    background: #000;
+    color: #fff;
+    overflow-x: hidden;
+    position: relative;
+}
+.custom-navbar {
+    background: rgba(0, 0, 0, 0.7); /* glassy effect */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease;
+    padding: 10px 0;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #fff !important;
+    margin: 0 10px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    padding: 8px 8px;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: scale(1.05);
+    color: #ffffff;
+  }
+  
+  .navbar-brand {
+    font-size: 1.25rem;
+    color: #fff !important;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  @media (max-width: 991.98px) {
+    .navbar-collapse {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+  }
+
+.stars, .twinkling {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    z-index: -1;
+}
+
+/* Star layer */
+.stars {
+    background: url("https://raw.githubusercontent.com/VincentGarreau/particles.js/master/demo/media/stars.png") repeat;
+    animation: moveStars 200s linear infinite;
+}
+
+/* Twinkling layer */
+.twinkling {
+    background: url("https://raw.githubusercontent.com/VincentGarreau/particles.js/master/demo/media/twinkling.png") repeat;
+    animation: moveTwinkling 100s linear infinite;
+}
+
+@keyframes moveStars {
+    from {background-position: 0 0;}
+    to {background-position: -10000px 5000px;}
+}
+
+@keyframes moveTwinkling {
+    from {background-position: 0 0;}
+    to {background-position: 10000px 0;}
+}

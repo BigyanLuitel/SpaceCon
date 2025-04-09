@@ -1,0 +1,23 @@
+body {
+    background: linear-gradient(to right, #2c3e50, #3498db);
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.weather-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+}
+
+.weather-icon {
+    width: 100px;
+}
+
+.footer {
+    margin-top: 50px;
+    text-align: center;
+    color: #ccc;
+}

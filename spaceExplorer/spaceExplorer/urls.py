@@ -19,9 +19,12 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from space.views import celestial_list
+from space.views import blogs
+from space.views import blog_detail
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('space.urls')),  # Includes app-level URLs
-    path('Templates/', celestial_list, name='celestial-list'),  # Corrected spelling
+    path('Templates/', celestial_list, name='celestial-list'),
+     path('blog/<int:blog_id>/', blog_detail, name='blog_detail'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

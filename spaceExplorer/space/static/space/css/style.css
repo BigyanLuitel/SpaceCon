@@ -1,53 +1,94 @@
-/* General Styles */
+/* Reset and General Styles */
 body, html {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-/* Navbar */
-.navbar {
-    z-index: 1000;
-}
-
-/* Hero Section */
+.custom-navbar {
+    background: rgba(0, 0, 0, 0.7); 
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease;
+    padding: 10px 0;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #fff !important;
+    margin: 0 10px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    padding: 8px 8px;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: scale(1.05);
+    color: #ffffff;
+  }
+  
+  .navbar-brand {
+    font-size: 1.25rem;
+    color: #fff !important;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  @media (max-width: 991.98px) {
+    .navbar-collapse {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+  }
 #hero {
-    min-height: 100vh; /* Full viewport height */
+    min-height: 100vh;
     background-image: url('/static/space/images/bg.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
     color: white;
+    text-align: center;
     position: relative;
-    padding: 100px 20px; /* Prevent content from being covered by navbar */
+    padding: 100px 20px;
 }
 
 .hero-content {
-    background: rgba(0, 0, 0, 0);
-    padding: 20px;
-    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
 }
 
 .explore-btn {
     background: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 12px 24px;
     border-radius: 5px;
     color: white;
     font-weight: bold;
-    transition: background 0.3s;
+    transition: background 0.3s ease-in-out;
 }
 
 .explore-btn:hover {
-    background: rgba(30, 7, 239, 0.5);
+    background: rgba(33, 102, 249, 0.6);
 }
 
-/* Card Section */
+
 #contents {
     min-height: 100vh;
-    background: white;
+    background: #f8f9fa;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,7 +97,7 @@ body, html {
 
 .card {
     width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
@@ -70,19 +111,58 @@ body, html {
     height: 200px;
     object-fit: cover;
 }
+#about {
+    background-color: #fff;
+    padding: 60px 0;
+}
 
-
-
-
-/* Footer */
+#about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
 #footer {
-    height: 40vh;
-    background: #222;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    background: #111;
     color: white;
-    position: relative;
-    padding: 20px;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#footer h5 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+#footer ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#footer ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+#footer p {
+    margin-bottom: 10px;
+}
+
+#footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+hr {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 32px;
+    }
 }

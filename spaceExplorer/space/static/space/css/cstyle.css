@@ -4,16 +4,16 @@ body {
 }
 /* Header Styling */
 .header {
-    background: linear-gradient(to right, #1e3c72, #2a5298);  /* Space-inspired gradient */
+    background: linear-gradient(to right, #1e3c72, #2a5298);  
     color: white;
     padding: 50px 0;
     text-align: center;
-    border-radius: 8px 8px 0 0;  /* Rounded corners on top */
+    border-radius: 8px 8px 0 0;  
     margin-bottom: 20px;
 }
 
 .header h1 {
-    font-family: 'Orbitron', sans-serif;  /* Space-themed font */
+    font-family: 'Orbitron', sans-serif;  
     font-size: 3rem;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -28,11 +28,11 @@ body {
 
 @media (max-width: 768px) {
     .header h1 {
-        font-size: 2.5rem;  /* Smaller header for mobile */
+        font-size: 2.5rem;  
     }
 
     .header p {
-        font-size: 1rem;  /* Adjust the description text size */
+        font-size: 1rem;  
     }
 }
 
@@ -82,11 +82,11 @@ body {
     background-color: #0056b3;
 }
 .modal-dialog {
-    max-width: 800px; /* Custom modal width */
+    max-width: 800px; 
 }
 
 .modal-content {
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 10px; 
 }
 
 .modal-header {
